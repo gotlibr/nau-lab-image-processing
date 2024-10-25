@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "image-scaling-service"
+version = "0.1.0"
+description = "Service for scaling images with async processing"
+authors = ["Your Name"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.115.3"
+uvicorn = {extras = ["standard"], version = "^0.32.0"}
+pillow = "^11.0.0"
+redis = "^5.2.0"
+sqlalchemy = "^2.0.36"
+psycopg2-binary = "^2.9.10"
+pydantic = "^2.9.2"
+python-multipart = "^0.0.12"
+alembic = "^1.13.3"
+pydantic-settings = "^2.6.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
